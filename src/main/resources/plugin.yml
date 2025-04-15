@@ -1,6 +1,6 @@
 name: Implements
-version: '0'
-main: Depend.Implements
+version: 0
+main: Class.Depend.Implements
 api-version: '1.21'
 authors: [ SEAMO ]
 description: My Plugin

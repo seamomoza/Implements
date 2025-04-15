@@ -1,9 +1,6 @@
-package Depend;
+package Class.Depend;
 
-import Base.Command;
-import Base.AutoListener;
-import Base.Tab;
-import Scan.ClassScanner;
+import Class.Scan.ClassScanner;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.PluginCommand;
@@ -18,12 +15,9 @@ public final class Implements extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
-        getLogger().info("Implements 활성화됨!");
-
-        // 자동 등록 트리거
-        ClassScanner.scanAndRegister("Base", AutoListener.class);
-        ClassScanner.scanAndRegister("Base", Command.class);
-        ClassScanner.scanAndRegister("Base", Tab.class);
+        getLogger().info("Implements 플러그인이 활성화되었습니다.");
+        // 클래스 스캔하여 리스너 자동 등록
+        ClassScanner.scanAndRegister(this);
     }
 
     // 등록 도우미 메서드들
