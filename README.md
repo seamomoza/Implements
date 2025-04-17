@@ -49,32 +49,12 @@ public class Sample extends Listen {
 사용법
 
 Listener클래스 자동 등록시
-```
+```java
 implements listener
 ```
 
 가 아닌
 
-```
+```java
 extends listen
 ```
-
-을 사용합니다
-
-CommandExcutor클래스 자동 등록시
-```
-(위의 리스너 클래스와동일)
-```
-가 아닌
-
-```
-extends Command
-```
-를 사용합니다
-
-Tab클래스 자동 등록시
-
-```
-extends Tab
-```
-을 사용합니다
