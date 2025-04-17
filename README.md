@@ -9,13 +9,13 @@
 
 Paper로 코드 작성시 매우 귀찮은 부분이하나 있습니다.
 
-```java(Listener)
+```java
 public class Sample implements Listener {
 }
 ```
 
 
-```java(Main)
+```java
 public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
